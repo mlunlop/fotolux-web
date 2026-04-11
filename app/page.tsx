@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute left-0 right-0 flex justify-center top-2 pointer-events-none">
           <Image
             src="/img/logo.png"
-            alt="Fotolux Logo"
+            alt="Fotolux Fotomatones - Alquiler para eventos y bodas"
             width={140}
             height={140}
             className="drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)] pointer-events-auto"
@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mt-20">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-md">
-            Fotolux <span className="text-brand">Fotomatones</span>
+            Alquiler de <span className="text-brand">Fotomatones</span> para Bodas y Eventos
           </h1>
           <p className="text-lg md:text-xl font-medium text-gray-200 drop-shadow max-w-2xl mx-auto">
             Crea recuerdos únicos. <br />Haz de tu evento algo inolvidable con un toque especial y divertido.
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="bg-black/30 p-4 rounded-xl border border-[#222]">
               <Image
                 src="/img/logo.png"
-                alt="Fotolux Logo"
+                alt="Fotolux Fotomatones Logo"
                 width={120}
                 height={120}
                 className="drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]"

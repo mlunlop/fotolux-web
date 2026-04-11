@@ -56,6 +56,7 @@ export default function ConfiguradorFondo() {
                 fill
                 className="object-cover"
                 quality={90}
+                sizes="(max-width: 768px) 100vw, 800px"
             />
 
             {/* Neon Image Overlay */}
@@ -67,6 +68,7 @@ export default function ConfiguradorFondo() {
                           alt={neon.name}
                           fill
                           className="object-contain filter drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] brightness-110 contrast-125 saturate-150 relative z-20"
+                          sizes="(max-width: 768px) 100vw, 500px"
                        />
                        {/* Additional glow layer for realistic neon */}
                         <Image
@@ -74,6 +76,7 @@ export default function ConfiguradorFondo() {
                           alt={`${neon.name} glow`}
                           fill
                           className="object-contain filter blur-md opacity-70 saturate-200 brightness-150 absolute top-0 left-0 z-10"
+                          sizes="(max-width: 768px) 100vw, 500px"
                        />
                    </div>
                 </div>
