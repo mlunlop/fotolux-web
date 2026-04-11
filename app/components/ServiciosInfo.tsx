@@ -108,16 +108,21 @@ export default function ServiciosInfo() {
              <span className="text-brand">✨</span> Servicios Extras
              <span className="text-xs font-normal text-gray-500 uppercase tracking-widest ml-2 hidden sm:inline-block">Para un toque espectacular</span>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Fotoimanes</span>
-              <span className="block text-brand text-lg font-black mb-2">100€</span>
+              <span className="block text-brand text-lg font-black mb-2">150€</span>
               <span className="block text-[10px] text-gray-400 leading-tight">Imanes ilimitados para todas tus fotos.</span>
             </div>
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Jardín Vertical</span>
               <span className="block text-brand text-lg font-black mb-2">120€</span>
               <span className="block text-[10px] text-gray-400 leading-tight">Decora tu photocall con más vida.</span>
+            </div>
+            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
+              <span className="block text-white font-bold mb-1">Triángulo</span>
+              <span className="block text-brand text-lg font-black mb-2">100€</span>
+              <span className="block text-[10px] text-gray-400 leading-tight">Estructura decorativa elegante para tu evento.</span>
             </div>
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Neones</span>

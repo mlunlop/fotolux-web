@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mt-20">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-md">
-            Alquiler de <span className="text-brand">Fotomatones</span> para Bodas y Eventos
+           Fotolux <span className="text-brand">Fotomatones</span>
           </h1>
           <p className="text-lg md:text-xl font-medium text-gray-200 drop-shadow max-w-2xl mx-auto">
             Crea recuerdos únicos. <br />Haz de tu evento algo inolvidable con un toque especial y divertido.
