@@ -112,7 +112,7 @@ export default function ServiciosInfo() {
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Fotoimanes</span>
               <span className="block text-brand text-lg font-black mb-2">150€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Imanes ilimitados para todas tus fotos.</span>
+              <span className="block text-[10px] text-gray-400 leading-tight">Imanes ilimitados para la nevera de tus invitados.</span>
             </div>
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Jardín Vertical</span>
@@ -122,7 +122,7 @@ export default function ServiciosInfo() {
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Triángulo</span>
               <span className="block text-brand text-lg font-black mb-2">100€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Estructura decorativa elegante para tu evento.</span>
+              <span className="block text-[10px] text-gray-400 leading-tight">Alternativa elegante pensada para adaptarse al entorno.</span>
             </div>
             <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
               <span className="block text-white font-bold mb-1">Neones</span>
