@@ -15,6 +15,15 @@ const images = [
 export default function CarruselPortafolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Initial check for desktop view and handle resize
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 768);
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -88,7 +97,7 @@ export default function CarruselPortafolio() {
           // Use absolute pixels on larger screens for better spacing? 
           // Percentages work well but let's adjust for varying screen sizes.
           // In CSS transform, percentages are relative to the element's bounding box.
-          if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+          if (isDesktop) {
              if (isPrev) translateX = '-60%';
              if (isNext) translateX = '60%';
              if (offset <= -2) translateX = '-110%';

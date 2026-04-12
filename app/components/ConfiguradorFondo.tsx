@@ -4,13 +4,13 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const FONDOS = [
-  { id: 'acolchado', name: 'Acolchado', src: '/img/fondos/acolchado.png' },
-  { id: 'floral', name: 'Floral', src: '/img/fondos/floral.png' },
-  { id: 'guirnaldas', name: 'Guirnaldas', src: '/img/fondos/guirnaldas.png' },
-  { id: 'jardin-vertical', name: 'Jardín Vertical', src: '/img/fondos/jardin-vertical.png', extraPrice: 120 },
-  { id: 'mapa', name: 'Mapa', src: '/img/fondos/mapa.png' },
-  { id: 'rayas', name: 'Rayas', src: '/img/fondos/rayas.png' },
-  { id: 'vintage', name: 'Vintage', src: '/img/fondos/vintage.png' }
+  { id: 'acolchado', name: 'Acolchado', src: '/img/fondos/acolchado.webp' },
+  { id: 'floral', name: 'Floral', src: '/img/fondos/floral.webp' },
+  { id: 'guirnaldas', name: 'Guirnaldas', src: '/img/fondos/guirnaldas.webp' },
+  { id: 'jardin-vertical', name: 'Jardín Vertical', src: '/img/fondos/jardin-vertical.webp', extraPrice: 120 },
+  { id: 'mapa', name: 'Mapa', src: '/img/fondos/mapa.webp' },
+  { id: 'rayas', name: 'Rayas', src: '/img/fondos/rayas.webp' },
+  { id: 'vintage', name: 'Vintage', src: '/img/fondos/vintage.webp' }
 ];
 
 const NEONES = [
