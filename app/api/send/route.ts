@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
         const data = await resend.emails.send({
             from: 'Fotolux <onboarding@resend.dev>', // If you add a custom domain to Resend later, change this.
-            to: ['mario.luna.lpez@gmail.com'],
+            to: ['fotoluxfotomatones@gmail.com'],
             subject: `Nueva Reserva: ${eventType} - ${name}`,
             html: `
         <h2>Nueva solicitud de reserva</h2>
