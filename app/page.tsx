@@ -66,7 +66,7 @@ export default function Home() {
             Reserva <br /><span className="text-brand">tu fecha</span>
           </h2>
           <p className="text-gray-400 mb-12 text-sm leading-relaxed max-w-sm">
-            Damos servicio en <strong>Granada, Málaga, Jaén, Almería y Córdoba</strong>. <br />Estamos listos para hacer de tu próximo evento algo legendario.
+           Estamos listos para hacer de tu próximo evento algo legendario.
           </p>
 
           <div className="space-y-8">
@@ -114,12 +114,12 @@ export default function Home() {
 
       {/* PORTFOLIO SECTION */}
       <section className="py-24 px-6 md:px-12 lg:px-24">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div>
             <p className="text-brand text-xs uppercase tracking-widest mb-2 font-semibold">Portafolio</p>
             <h2 className="text-4xl md:text-5xl font-bold">Nuestros Eventos</h2>
           </div>
-          <p className="text-gray-400 max-w-md text-sm mt-4 md:mt-0 leading-relaxed text-right">
+          <p className="text-gray-400 max-w-md text-sm mt-4 md:mt-0 leading-relaxed text-left md:text-right">
             Capturamos la esencia de cada celebración. Desde bodas exclusivas hasta eventos corporativos llenos de energía.
           </p>
         </div>

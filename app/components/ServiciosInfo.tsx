@@ -3,7 +3,7 @@ import React from 'react';
 export default function ServiciosInfo() {
   return (
     <section className="py-20 px-6 md:px-12 lg:px-24 w-full max-w-[1400px] mx-auto">
-      <div className="text-center mb-16">
+      <div className="text-left md:text-center mb-16">
         <p className="text-brand text-xs uppercase tracking-widest mb-2 font-semibold">Servicios Integrales</p>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Todo lo que incluye <br className="md:hidden" />
