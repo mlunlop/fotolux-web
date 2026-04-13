@@ -66,7 +66,7 @@ export default function Home() {
             Reserva <br /><span className="text-brand">tu fecha</span>
           </h2>
           <p className="text-gray-400 mb-12 text-sm leading-relaxed max-w-sm">
-            Estamos listos para hacer de tu próximo evento algo legendario. Completa los detalles y nosotros ponemos la magia.
+            Damos servicio en <strong>Granada, Málaga, Jaén, Almería y Córdoba</strong>. <br />Estamos listos para hacer de tu próximo evento algo legendario.
           </p>
 
           <div className="space-y-8">
