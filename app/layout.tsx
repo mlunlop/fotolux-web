@@ -78,6 +78,7 @@ const jsonLd = {
 };
 
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function RootLayout({
   children,
@@ -96,6 +97,7 @@ export default function RootLayout({
       <body id="top">
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
