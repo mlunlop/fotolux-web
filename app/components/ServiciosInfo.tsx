@@ -105,7 +105,7 @@ export default function ServiciosInfo() {
         {/* EXTRAS */}
         <div className="lg:col-span-2 bg-[#1a1a1a] rounded-3xl p-8 border border-[#2a2a2a] relative shadow-lg">
           <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
-             <span className="text-brand">✨</span> Servicios Extras
+             <span className="text-brand">Servicios Extras</span>
              <span className="text-xs font-normal text-gray-500 uppercase tracking-widest ml-2 hidden sm:inline-block">Para un toque espectacular</span>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">

@@ -69,16 +69,16 @@ export default function ContactForm() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Nombre completo *</label>
-              <input type="text" name="name" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Nombre completo *</label>
+              <input type="text" name="name" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Teléfono de contacto *</label>
-              <input type="tel" name="phone" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Teléfono de contacto *</label>
+              <input type="tel" name="phone" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
             </div>
             <div className="flex flex-col gap-2 md:col-span-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Correo electrónico *</label>
-              <input type="email" name="email" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Correo electrónico *</label>
+              <input type="email" name="email" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
             </div>
           </div>
         </div>
@@ -93,33 +93,33 @@ export default function ContactForm() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Fecha del evento *</label>
-              <input type="date" name="date" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-gray-300" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Fecha del evento *</label>
+              <input type="date" name="date" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-gray-300 [color-scheme:dark]" required />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Horario de comienzo *</label>
-              <input type="time" name="time" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-gray-300" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Horario de comienzo *</label>
+              <input type="time" name="time" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-gray-300 [color-scheme:dark]" required />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Lugar del evento *</label>
-              <input type="text" name="location" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Lugar del evento *</label>
+              <input type="text" name="location" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="text-xs uppercase text-gray-400 tracking-wider">Provincia *</label>
-              <input type="text" name="province" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
+              <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Provincia *</label>
+              <input type="text" name="province" placeholder="Tu respuesta" className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors text-white" required />
             </div>
           </div>
 
           <div className="flex flex-col gap-3">
-            <label className="text-xs uppercase text-gray-400 tracking-wider mb-2">Elige el tipo de evento *</label>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 text-sm text-gray-300">
+            <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider mb-2">Elige el tipo de evento *</label>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 text-base md:text-sm text-gray-300">
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="tipo_evento" value="Boda" className="accent-brand w-4 h-4" required /> Boda</label>
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="tipo_evento" value="Comunión" className="accent-brand w-4 h-4" /> Comunión</label>
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="tipo_evento" value="Evento de empresa" className="accent-brand w-4 h-4" /> Evento de empresa</label>
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="tipo_evento" value="Cumpleaños" className="accent-brand w-4 h-4" /> Cumpleaños</label>
               <div className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand transition-colors col-span-2 lg:col-span-2">
                 <label className="flex items-center gap-3 cursor-pointer whitespace-nowrap"><input type="radio" name="tipo_evento" value="Otro" className="accent-brand w-4 h-4" /> Otro:</label>
-                <input type="text" name="tipo_evento_otro" placeholder="Especifique..." className="bg-transparent border-b border-[#555] focus:border-brand focus:outline-none w-full text-sm px-2 text-white pb-1" />
+                <input type="text" name="tipo_evento_otro" placeholder="Especifique..." className="bg-transparent border-b border-[#555] focus:border-brand focus:outline-none w-full text-base md:text-sm px-2 text-white pb-1" />
               </div>
             </div>
           </div>
@@ -135,8 +135,8 @@ export default function ContactForm() {
           </h3>
 
           <div className="flex flex-col gap-3 mb-8">
-            <label className="text-xs uppercase text-gray-400 tracking-wider mb-2">¿Cómo nos has conocido? *</label>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-300">
+            <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider mb-2">¿Cómo nos has conocido? *</label>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-base md:text-sm text-gray-300">
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="conocido" value="Instagram" className="accent-brand w-4 h-4" required /> Instagram</label>
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="conocido" value="Google" className="accent-brand w-4 h-4" /> Google</label>
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors"><input type="radio" name="conocido" value="En otro evento" className="accent-brand w-4 h-4" /> En otro evento</label>
@@ -144,14 +144,14 @@ export default function ContactForm() {
               <label className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand cursor-pointer transition-colors md:col-span-2"><input type="radio" name="conocido" value="Recomendación" className="accent-brand w-4 h-4 shrink-0" /> <span className="leading-tight">Recomendación (dime en Otro de parte de quién vienes)</span></label>
               <div className="flex items-center gap-3 bg-[#0f0f0f] border border-[#333] p-3 rounded-lg hover:border-brand transition-colors md:col-span-2">
                 <label className="flex items-center gap-3 cursor-pointer shrink-0"><input type="radio" name="conocido" value="Otro" className="accent-brand w-4 h-4" /> Otro:</label>
-                <input type="text" name="conocido_otro" placeholder="Cuéntanos..." className="bg-transparent border-b border-[#555] focus:border-brand focus:outline-none w-full text-sm px-2 text-white pb-1" />
+                <input type="text" name="conocido_otro" placeholder="Cuéntanos..." className="bg-transparent border-b border-[#555] focus:border-brand focus:outline-none w-full text-base md:text-sm px-2 text-white pb-1" />
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-xs uppercase text-gray-400 tracking-wider">Si tienes alguna consulta o anotación</label>
-            <textarea name="notes" rows={4} placeholder="Escribe aquí tu consulta..." className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors resize-none text-white"></textarea>
+            <label className="text-sm md:text-xs uppercase text-gray-400 tracking-wider">Si tienes alguna consulta o anotación</label>
+            <textarea name="notes" rows={4} placeholder="Escribe aquí tu consulta..." className="bg-[#0f0f0f] border border-[#333] rounded-lg px-4 py-3 text-base md:text-sm focus:outline-none focus:border-brand transition-colors resize-none text-white"></textarea>
           </div>
         </div>
 
@@ -181,7 +181,7 @@ export default function ContactForm() {
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </div>
-            <label htmlFor="privacy-policy" className="text-sm text-gray-300 cursor-pointer select-none w-full leading-tight">
+            <label htmlFor="privacy-policy" className="text-base md:text-sm text-gray-300 cursor-pointer select-none w-full leading-tight">
               He leído y acepto la <Link href="/politica-privacidad" className="text-brand hover:text-brand-hover hover:underline font-medium transition-colors">Política de Privacidad</Link> <span className="text-brand">*</span>
             </label>
           </div>

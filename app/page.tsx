@@ -5,6 +5,7 @@ import CarruselPortafolio from './components/CarruselPortafolio';
 import ServiciosInfo from './components/ServiciosInfo';
 import ContactForm from './components/ContactForm';
 import ResenasGoogle from './components/ResenasGoogle';
+import AccordionItem from './components/AccordionItem';
 
 export default function Home() {
   return (
@@ -59,59 +60,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* RESERVA SECTION */}
-      <section id="contacto" className="py-24 px-6 md:px-12 lg:px-24 w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
-        <div className="w-full lg:w-1/3 lg:sticky lg:top-32 h-fit">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Reserva <br /><span className="text-brand">tu fecha</span>
-          </h2>
-          <p className="text-gray-400 mb-12 text-sm leading-relaxed max-w-sm">
-           Estamos listos para hacer de tu próximo evento algo legendario.
-          </p>
-
-          <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="bg-[#1A1A1A] p-3 rounded border border-[#333] text-brand">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Teléfono</p>
-                <p className="font-semibold text-lg text-white">685977198</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-[#1A1A1A] p-3 rounded border border-[#333] text-brand">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Email</p>
-                <p className="font-semibold text-lg text-white">fotoluxfotomatones@gmail.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-[#1A1A1A] p-3 rounded border border-[#333] text-brand">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Instagram</p>
-                <p className="font-semibold text-lg text-white">@fotoluxfotomatones</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <ContactForm />
-      </section>
-
       {/* PORTFOLIO SECTION */}
       <section className="py-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
@@ -136,8 +84,80 @@ export default function Home() {
       {/* RESEÑAS GOOGLE SECTION */}
       <ResenasGoogle />
 
-      {/* CONFIGURADOR SECTION */}
-      <ConfiguradorFondo />
+      {/* COLLAPSIBLE RESERVA & CONFIGURADOR SECTIONS */}
+      <section className="py-12 px-6 md:px-12 lg:px-24 w-full max-w-[1400px] mx-auto flex flex-col gap-0">
+        
+        {/* Accordion 1: Reserva tu fecha / Contacto */}
+        <AccordionItem
+          id="contacto"
+          tag="Reserva"
+          title={<>Reserva <span className="text-brand">tu fecha</span></>}
+          subtitle="Consulta disponibilidad, solicita presupuesto sin compromiso o reserva tu fecha directamente."
+          actionLabel="Abrir Formulario"
+          activeActionLabel="Cerrar Formulario"
+        >
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 pt-6">
+            <div className="w-full lg:w-1/3 h-fit space-y-8">
+              <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
+                Consulta nuestra disponibilidad y reserva el mejor fotomatón para tu gran día. Puedes escribirnos directamente o rellenar el formulario.
+              </p>
+
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#1A1A1A] p-3 rounded-xl border border-[#333] text-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Teléfono</p>
+                    <p className="font-semibold text-lg text-white">685977198</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#1A1A1A] p-3 rounded-xl border border-[#333] text-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Email</p>
+                    <p className="font-semibold text-lg text-white">fotoluxfotomatones@gmail.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#1A1A1A] p-3 rounded-xl border border-[#333] text-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">Instagram</p>
+                    <p className="font-semibold text-lg text-white">@fotoluxfotomatones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ContactForm />
+          </div>
+        </AccordionItem>
+
+        {/* Accordion 2: Configurador de Fondo */}
+        <AccordionItem
+          id="configurador"
+          tag="Personalizar"
+          title={<>Configurador <span className="text-brand">de Fondo</span></>}
+          subtitle="Juega y experimenta combinando fondos y letreros de neón para visualizar tu photocall ideal (simulador interactivo de muestra)."
+          actionLabel="Probar Simulador"
+          activeActionLabel="Cerrar Simulador"
+        >
+          <ConfiguradorFondo />
+        </AccordionItem>
+      </section>
 
     </main>
   );
