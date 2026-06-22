@@ -13,7 +13,7 @@ export default function HeroContactButton() {
     <a
       href="#contacto"
       onClick={handleClick}
-      className="inline-block mt-12 md:mt-16 bg-brand text-black font-bold py-3 px-8 rounded-full text-base md:text-lg uppercase tracking-wider hover:bg-brand-hover hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(237,180,42,0.3)]"
+      className="inline-block md:hidden mt-12 md:mt-16 bg-brand text-black font-bold py-3 px-8 rounded-full text-base md:text-lg uppercase tracking-wider hover:bg-brand-hover hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(237,180,42,0.3)]"
     >
       Solicita tu Presupuesto
     </a>

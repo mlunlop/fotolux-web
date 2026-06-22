@@ -148,17 +148,21 @@ export default function Home() {
           </div>
         </AccordionItem>
 
-        {/* Accordion 2: Configurador de Fondo */}
-        <AccordionItem
-          id="configurador"
-          tag="Personalizar"
-          title={<>Configurador <span className="text-brand">de Fondo</span></>}
-          subtitle="Juega y experimenta combinando fondos y letreros de neón para visualizar tu photocall ideal (simulador interactivo de muestra)."
-          actionLabel="Probar Simulador"
-          activeActionLabel="Cerrar Simulador"
-        >
-          <ConfiguradorFondo />
-        </AccordionItem>
+        {/* Section: Configurador de Fondo */}
+        <div id="configurador" className="w-full pt-16 border-t border-[#333] mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8">
+            <div>
+              <p className="text-brand text-xs uppercase tracking-widest mb-2 font-semibold">Personalizar</p>
+              <h2 className="text-3xl md:text-4xl font-bold">Configurador <span className="text-brand">de Fondo</span></h2>
+            </div>
+            <p className="text-gray-400 max-w-md text-sm mt-4 md:mt-0 leading-relaxed text-left md:text-right">
+              Juega y experimenta combinando fondos y letreros de neón para visualizar tu photocall ideal (simulador interactivo de muestra).
+            </p>
+          </div>
+          <div className="w-full">
+            <ConfiguradorFondo />
+          </div>
+        </div>
       </section>
 
     </main>
