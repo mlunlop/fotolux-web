@@ -7,10 +7,10 @@ const FONDOS = [
   { id: 'acolchado', name: 'Acolchado', src: '/img/fondos/acolchado.webp' },
   { id: 'floral', name: 'Floral', src: '/img/fondos/floral.webp' },
   { id: 'guirnaldas', name: 'Guirnaldas', src: '/img/fondos/guirnaldas.webp' },
-  { id: 'jardin-vertical', name: 'Jardín Vertical', src: '/img/fondos/jardin-vertical.webp', extraPrice: 120 },
+  { id: 'jardin-vertical', name: 'Jardín Vertical', src: '/img/fondos/jardin-vertical.webp' },
   { id: 'mapa', name: 'Mapa', src: '/img/fondos/mapa.webp' },
   { id: 'rayas', name: 'Rayas', src: '/img/fondos/rayas.webp' },
-  { id: 'triangulo', name: 'Triángulo', src: '/img/fondos/triangulo.webp', extraPrice: 100 },
+  { id: 'triangulo', name: 'Triángulo', src: '/img/fondos/triangulo.webp' },
   { id: 'vintage', name: 'Vintage', src: '/img/fondos/vintage.webp' }
 ];
 
@@ -80,7 +80,7 @@ export default function ConfiguradorFondo() {
         {/* Fondos Controls */}
         <div className="flex flex-col items-center">
             <h3 className="text-xs uppercase text-gray-400 tracking-wider mb-4 font-semibold">
-              Seleccionar Fondo {fondo.extraPrice && <span className="text-brand normal-case">(+{fondo.extraPrice}€)</span>}
+              Seleccionar Fondo
             </h3>
             <div className="flex items-center gap-6">
                 <button onClick={prevFondo} className="w-10 h-10 rounded-full bg-[#222] border border-[#333] flex items-center justify-center hover:bg-brand hover:text-black transition-colors" aria-label="Fondo anterior">
@@ -102,7 +102,7 @@ export default function ConfiguradorFondo() {
 
         {/* Neon Controls */}
         <div className="flex flex-col items-center">
-            <h3 className="text-xs uppercase text-gray-400 tracking-wider mb-4 font-semibold">Seleccionar Neón (+80€)</h3>
+            <h3 className="text-xs uppercase text-gray-400 tracking-wider mb-4 font-semibold">Seleccionar Neón</h3>
             <div className="flex items-center gap-6">
                 <button onClick={prevNeon} className="w-10 h-10 rounded-full bg-[#222] border border-[#333] flex items-center justify-center hover:bg-[#ff1493] hover:text-white transition-colors" aria-label="Neón anterior">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

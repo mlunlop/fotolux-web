@@ -189,7 +189,7 @@ export default function ContactForm() {
           <div className="flex justify-end">
             <button type="submit" disabled={status === 'loading'} className="w-full md:w-auto overflow-hidden relative group bg-brand hover:bg-brand-hover text-black font-bold py-4 px-12 rounded-lg transition-all shadow-[0_0_20px_rgba(237,180,42,0.2)] hover:shadow-[0_0_30px_rgba(237,180,42,0.4)] disabled:opacity-50 disabled:cursor-not-allowed transform hover:-translate-y-1 uppercase tracking-wider text-sm flex items-center justify-center gap-3">
               <span className={`transition-all duration-300 ${status === 'loading' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
-                Enviar Petición
+                Pedir Presupuesto
               </span>
               <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transition-all duration-300 delay-75 ${status === 'loading' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

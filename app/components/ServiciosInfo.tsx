@@ -10,7 +10,7 @@ export default function ServiciosInfo() {
           <span className="text-brand">nuestro servicio</span>
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto text-sm leading-relaxed">
-          Diseñado para que tú y tus invitados solo os preocupéis de disfrutar. Todo el equipo, la personalización y la diversión, incluidos en un precio cerrado.
+          Diseñado para que tú y tus invitados solo os preocupéis de disfrutar. Todo el equipo, la personalización y la diversión, incluidos en tu presupuesto personalizado.
         </p>
       </div>
 
@@ -26,9 +26,9 @@ export default function ServiciosInfo() {
                </h3>
               <p className="text-gray-400 text-sm">El servicio estrella con todo incluido, sin sorpresas.</p>
             </div>
-            <div className="shrink-0 bg-brand/10 border border-brand/30 px-6 py-4 rounded-2xl flex flex-col items-center justify-center">
-              <span className="text-brand text-3xl font-black">590€</span>
-              <span className="text-[10px] uppercase text-brand/80 font-bold tracking-wider">IVA Incluido</span>
+            <div className="shrink-0 bg-brand/10 border border-brand/30 px-6 py-4 rounded-2xl flex flex-col items-center justify-center text-center">
+              <span className="text-brand text-xl font-bold mb-1">Presupuesto</span>
+              <span className="text-[10px] uppercase text-brand/80 font-bold tracking-wider">Personalizado</span>
             </div>
           </div>
 
@@ -109,30 +109,30 @@ export default function ServiciosInfo() {
              <span className="text-xs font-normal text-gray-500 uppercase tracking-widest ml-2 hidden sm:inline-block">Para un toque espectacular</span>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
-              <span className="block text-white font-bold mb-1">Fotoimanes</span>
-              <span className="block text-brand text-lg font-black mb-2">150€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Imanes ilimitados para la nevera de tus invitados.</span>
+            <div className="bg-[#111] p-6 rounded-2xl border border-[#333] hover:border-brand/50 hover:bg-[#161616] transition-all duration-300 group text-center flex flex-col items-center justify-center min-h-[140px] relative overflow-hidden shadow-sm hover:shadow-brand/5">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="block text-white font-bold text-sm sm:text-base mb-2 group-hover:text-brand transition-colors">Fotoimanes</span>
+              <span className="block text-xs text-gray-400 leading-relaxed">Imanes ilimitados para la nevera.</span>
             </div>
-            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
-              <span className="block text-white font-bold mb-1">Jardín Vertical</span>
-              <span className="block text-brand text-lg font-black mb-2">120€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Decora tu photocall con más vida.</span>
+            <div className="bg-[#111] p-6 rounded-2xl border border-[#333] hover:border-brand/50 hover:bg-[#161616] transition-all duration-300 group text-center flex flex-col items-center justify-center min-h-[140px] relative overflow-hidden shadow-sm hover:shadow-brand/5">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="block text-white font-bold text-sm sm:text-base mb-2 group-hover:text-brand transition-colors">Jardín Vertical</span>
+              <span className="block text-xs text-gray-400 leading-relaxed">Decora tu photocall con más vida.</span>
             </div>
-            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
-              <span className="block text-white font-bold mb-1">Triángulo</span>
-              <span className="block text-brand text-lg font-black mb-2">100€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Alternativa elegante pensada para adaptarse al entorno.</span>
+            <div className="bg-[#111] p-6 rounded-2xl border border-[#333] hover:border-brand/50 hover:bg-[#161616] transition-all duration-300 group text-center flex flex-col items-center justify-center min-h-[140px] relative overflow-hidden shadow-sm hover:shadow-brand/5">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="block text-white font-bold text-sm sm:text-base mb-2 group-hover:text-brand transition-colors">Triángulo</span>
+              <span className="block text-xs text-gray-400 leading-relaxed">Estructura elegante de madera.</span>
             </div>
-            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
-              <span className="block text-white font-bold mb-1">Neones</span>
-              <span className="block text-brand text-lg font-black mb-2">80€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Letreros luminosos y modernos.</span>
+            <div className="bg-[#111] p-6 rounded-2xl border border-[#333] hover:border-brand/50 hover:bg-[#161616] transition-all duration-300 group text-center flex flex-col items-center justify-center min-h-[140px] relative overflow-hidden shadow-sm hover:shadow-brand/5">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="block text-white font-bold text-sm sm:text-base mb-2 group-hover:text-brand transition-colors">Neones</span>
+              <span className="block text-xs text-gray-400 leading-relaxed">Letreros luminosos modernos.</span>
             </div>
-            <div className="bg-[#111] p-5 rounded-2xl border border-[#333] hover:border-brand/40 transition-colors group text-center">
-              <span className="block text-white font-bold mb-1">Hora Extra</span>
-              <span className="block text-brand text-lg font-black mb-2">100€</span>
-              <span className="block text-[10px] text-gray-400 leading-tight">Que no pare la fiesta. Diversión sin límite.</span>
+            <div className="bg-[#111] p-6 rounded-2xl border border-[#333] hover:border-brand/50 hover:bg-[#161616] transition-all duration-300 group text-center flex flex-col items-center justify-center min-h-[140px] relative overflow-hidden shadow-sm hover:shadow-brand/5">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="block text-white font-bold text-sm sm:text-base mb-2 group-hover:text-brand transition-colors">Hora Extra</span>
+              <span className="block text-xs text-gray-400 leading-relaxed">Que no pare nunca la fiesta.</span>
             </div>
           </div>
         </div>

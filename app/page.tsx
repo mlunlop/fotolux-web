@@ -6,6 +6,8 @@ import ServiciosInfo from './components/ServiciosInfo';
 import ContactForm from './components/ContactForm';
 import ResenasGoogle from './components/ResenasGoogle';
 import AccordionItem from './components/AccordionItem';
+import NavContactButton from './components/NavContactButton';
+
 
 export default function Home() {
   return (
@@ -25,9 +27,7 @@ export default function Home() {
 
         {/* Contact Button (Aligned Right) */}
         <div className="ml-auto z-10 hidden md:block">
-          <Link href="#contacto" className="bg-brand text-black font-semibold py-2 px-6 rounded text-sm uppercase tracking-wider hover:bg-brand-hover transition-colors">
-            Contacto
-          </Link>
+          <NavContactButton />
         </div>
       </header>
 
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 pt-6">
             <div className="w-full lg:w-1/3 h-fit space-y-8">
               <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-                Consulta nuestra disponibilidad y reserva el mejor fotomatón para tu gran día. Puedes escribirnos directamente o rellenar el formulario.
+                Consulta nuestra disponibilidad y pide tu presupuesto personalizado para el mejor fotomatón en tu gran día. Puedes escribirnos directamente o rellenar el formulario.
               </p>
 
               <div className="space-y-8">
