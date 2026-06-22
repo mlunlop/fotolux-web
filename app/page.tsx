@@ -6,6 +6,7 @@ import ServiciosInfo from './components/ServiciosInfo';
 import ContactForm from './components/ContactForm';
 import ResenasGoogle from './components/ResenasGoogle';
 import AccordionItem from './components/AccordionItem';
+import HeroContactButton from './components/HeroContactButton';
 import NavContactButton from './components/NavContactButton';
 
 
@@ -50,6 +51,7 @@ export default function Home() {
           <p className="text-lg md:text-xl font-medium text-gray-200 drop-shadow max-w-2xl mx-auto">
             Crea recuerdos únicos. <br />Haz de tu evento algo inolvidable con un toque especial y divertido.
           </p>
+          <HeroContactButton />
         </div>
 
         <div className="absolute bottom-10 z-10 flex flex-col items-center opacity-80 animate-bounce">

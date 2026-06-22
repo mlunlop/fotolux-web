@@ -26,33 +26,37 @@ export default function AccordionItem({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   useEffect(() => {
-    const handleHashChange = () => {
+    const handleHashChange = (isInitialLoad = false) => {
       if (window.location.hash === `#${id}`) {
         setIsOpen(true);
-        // Delay to allow layout changes to happen
-        setTimeout(() => {
-          const element = document.getElementById(id);
-          if (element) {
-            // Adjust scroll position to account for sticky header
-            const offset = 100; // rough height of sticky header
-            const bodyRect = document.body.getBoundingClientRect().top;
-            const elementRect = element.getBoundingClientRect().top;
-            const elementPosition = elementRect - bodyRect;
-            const offsetPosition = elementPosition - offset;
+        
+        if (!isInitialLoad) {
+          // Delay to allow layout changes to happen
+          setTimeout(() => {
+            const element = document.getElementById(id);
+            if (element) {
+              // Adjust scroll position to account for sticky header
+              const offset = 100; // rough height of sticky header
+              const bodyRect = document.body.getBoundingClientRect().top;
+              const elementRect = element.getBoundingClientRect().top;
+              const elementPosition = elementRect - bodyRect;
+              const offsetPosition = elementPosition - offset;
 
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }
-        }, 150);
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }, 150);
+        }
       }
     };
 
-    handleHashChange();
+    handleHashChange(true);
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    const listener = () => handleHashChange(false);
+    window.addEventListener('hashchange', listener);
+    return () => window.removeEventListener('hashchange', listener);
   }, [id]);
 
   return (
