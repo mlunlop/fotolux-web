@@ -43,7 +43,7 @@ export default function WhatsAppButton() {
         {/* Footer */}
         <div className="p-4 bg-white flex justify-end border-t border-gray-100">
           <a
-            href="https://wa.me/34685977198"
+            href="https://wa.me/34685977198?text=%C2%A1Hola!%20He%20estado%20viendo%20la%20web%20y%20me%20gustaria%20recibir%20m%C3%A1s%20informacion%20sobre%20vuestro%20servicio.%20%C2%A1Gracias!"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#22c35e] text-white font-medium py-2.5 px-6 rounded-full transition-colors w-max shadow-sm"
